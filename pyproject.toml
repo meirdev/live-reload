@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "live-reload"
+version = "0.1.0"
+description = ""
+authors = ["meirdev <maornet@gmail.com>"]
+readme = "README.md"
+packages = [{include = "live_reload"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+watchfiles = "^0.19.0"
+fastapi = "^0.97.0"
+uvicorn = "^0.22.0"
+websockets = "^11.0.3"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+pytest = "^7.3.2"
+pytest-playwright = "^0.3.3"
+pytest-asyncio = "^0.21.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
